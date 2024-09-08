@@ -1,5 +1,6 @@
 import React from "react";
 import "./WaterFootprint.css"; // Importing the CSS for other styles
+import Navbar from "./components/Navbar";
 
 const WaterFootprint = () => {
   // Applying inline styles for the background image
@@ -18,19 +19,7 @@ const WaterFootprint = () => {
     <div className="water-footprint-page">
       <div style={backgroundStyle} className="water-footprint-container">
         {/* Logo and Nav */}
-        <header className="navbar">
-          <div className="logo">
-            <img src="/logo.jpg" alt="Jala Logo" /> {/* Make sure logo is also in 'public' */}
-          </div>
-          <nav>
-            <ul>
-              <li>Water Footprint 101</li>
-              <li>How to Save Water?</li>
-              <li>Educational Resources</li>
-              <li>News and Articles</li>
-            </ul>
-          </nav>
-        </header>
+        <Navbar />
 
         {/* Main content */}
         <main>
