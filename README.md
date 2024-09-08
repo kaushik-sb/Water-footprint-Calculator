@@ -25,6 +25,7 @@ To clone the repository and set up the project on your local machine, follow the
 git clone https://github.com/jonofficial/water_footprints_calculator.git
 cd water_footprints_calculator
 code .
+```
 
 ### Installing Dependencies
 
@@ -32,6 +33,7 @@ Install all required dependencies by running the following command in the projec
 
 ```bash
 npm install
+```
 
 ### Running the Application
 
@@ -40,6 +42,7 @@ Install all required dependencies by running the following command in the projec
 
 ```bash
 npm start
+```
 
 ### Usage
 After starting the application, you can interact with the UI to enter product details or upload images to calculate the water footprints. The application provides intuitive guidance and visual feedback to help users understand the impact of their consumption patterns on water resources.
