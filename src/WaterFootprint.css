@@ -1,0 +1,135 @@
+/* Main Container for Water Footprint Page */
+.water-footprint-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+    color: #104773;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  nav ul li:hover {
+    text-decoration: underline;
+  }
+  
+  .intro {
+    margin-top: 20px;
+    text-align: center;
+    color: #3EA0EE; /* Text color */
+    background-color: transparent; /* Fully transparent background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    color: #3EA0EE;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .cta-button {
+    background-color: #11536E;
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border: none;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 5rem;
+    margin-left : 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .cta-button .arrow-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .cta-button:hover {
+    background-color: #3EA0EE;
+  }
+  
+  /* Dive Deeper Section */
+  .dive-deeper-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .dive-deeper-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0b2545;
+  }
+  
+  .dive-deeper-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .dive-deeper-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+  }
+  
+  .dive-deeper-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .dive-deeper-card h3 {
+    color: #0b2545;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .deep-button {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .deep-button:hover {
+    background-color: #ccc;
+  }
+  
