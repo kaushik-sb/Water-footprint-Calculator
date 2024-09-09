@@ -4,6 +4,13 @@
     flex-direction: column;
   }
   
+  
+  .logo img {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    mix-blend-mode: multiply; /* This will blend the white background */
+  }
+  
   /* Navbar */
   .navbar {
     display: flex;
@@ -52,7 +59,7 @@
   
   .intro p {
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin-top: 2rem 0;
     font-weight: 500;
     color: #104773;
   }
@@ -76,13 +83,14 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  margin-top: 5rem;
   justify-content: center;
   gap: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.cta-exclusive{
+.cta-exclusive {
   margin-left: 40%;
 }
 
@@ -91,8 +99,9 @@
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
 }
 
+/* Make the text inside the button link white and bold */
 .cta-link {
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
   color: white; /* Ensure the link text stays white */
   font-weight: bold; /* Make the text more prominent */
 }

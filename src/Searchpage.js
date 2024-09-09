@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom"; // Import the Link component
 import "./WaterFootprint.css"; // Importing the CSS for other styles
 import Navbar from "./components/Navbar";
 
@@ -16,41 +15,23 @@ const SearchPage = () => {
     justifyContent: "space-between",
   };
 
-  const headerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '20px 50px',
-  };
-
-  const navStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    listStyle: 'none',
-    gap: '20px',
-  };
-
-  // Styling for the text (h1 and p)
-  const textStyle = {
-    color: '#3EA0EE',
-    marginBottom: '20px',
-    marginTop: '10px', // Move text upwards
-  };
-
-  // Search bar styling remains the same
+  // Search bar styling
   const searchBoxStyle = {
-    marginTop: '20px',
+    marginTop: '100px', // Increased this value to create a larger gap between text and search box
   };
 
   return (
     <div style={backgroundStyle}>
-        <Navbar />
+      <Navbar />
       <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flexGrow: 1 }}>
- 
-        <h1 style={{ ...textStyle }}>Search for Any Food Product</h1>
-        <p style={{ ...textStyle }}>
-          It includes your tap water use and the "virtual water" used to produce your food, electricity, gas, and home goods.
-        </p>
+        
+        {/* Use intro class for styling */}
+        <section className="intro" style={{ marginTop: '-100px' }}> {/* Moved the heading and text up */}
+          <h1>Search for Any Food Product</h1>
+          <p>
+            It includes your tap water use and the "virtual water" used to produce your food, electricity, gas, and home goods.
+          </p>
+        </section>
 
         {/* Search box stays in its position */}
         <div style={searchBoxStyle}>
@@ -66,18 +47,7 @@ const SearchPage = () => {
               marginRight: '10px'
             }} 
           />
-          <button 
-            style={{
-              padding: '10px 20px',
-              borderRadius: '25px',
-              border: 'none',
-              backgroundColor: '#007BFF',
-              color: 'white',
-              cursor: 'pointer'
-            }}
-          >
-            <i className="fa fa-search"></i> {/* Assuming you have FontAwesome for the icon */}
-          </button>
+
         </div>
       </main>
     </div>

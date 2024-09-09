@@ -30,10 +30,12 @@ const WaterFootprint = () => {
               sustainable future.
             </p>
             <button className="cta-button cta-exclusive">
-            <Link to="/Searchpage">Find Your Footprint</Link>
-              
+              <Link to="/Searchpage" className="cta-link">
+                Find Your Footprint
+              </Link>
               <img src="/arrow.svg" alt="Arrow" className="arrow-icon" /> {/* Reference the SVG */}
             </button>
+
           </section>
         </main>
       </div>
