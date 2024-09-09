@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import the Link component
 import "./WaterFootprint.css"; // Importing the CSS for other styles
 import Navbar from "./components/Navbar";
 
@@ -20,7 +21,6 @@ const WaterFootprint = () => {
       <div style={backgroundStyle} className="water-footprint-container">
         {/* Logo and Nav */}
         <Navbar />
-
         {/* Main content */}
         <main>
           <section className="intro">
@@ -29,7 +29,7 @@ const WaterFootprint = () => {
               Discover your water consumption and learn how to reduce your footprint for a more
               sustainable future.
             </p>
-            <button className="cta-button">
+            <button className="cta-button cta-exclusive">
               Find Your Footprint
               <img src="/arrow.svg" alt="Arrow" className="arrow-icon" /> {/* Reference the SVG */}
             </button>
@@ -45,7 +45,9 @@ const WaterFootprint = () => {
           <div className="dive-deeper-card">
             <img src="/water-drop-icon.png" alt="Water Footprint 101" />
             <h3>WATER FOOTPRINT 101</h3>
-            <button className="deep-button">THE BASICS OF WATER FOOTPRINT</button>
+            <button className="deep-button">
+    <Link to="/FootprintInfo">THE BASICS OF WATER FOOTPRINT</Link>
+</button>
           </div>
 
           {/* Card 2 */}
