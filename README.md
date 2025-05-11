@@ -49,6 +49,3 @@ After starting the application, you can interact with the UI to enter product de
 
 ### Contributing
 Contributions to the project are welcome. If you have suggestions for improving the application or have found a bug, please open an issue first to discuss your ideas or the bug you found. If you wish to contribute code, please fork the repository and use a pull request to submit your changes for review.
-
-### License
-This project is licensed under the MIT License - see the LICENSE file for details.
